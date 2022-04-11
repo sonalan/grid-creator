@@ -19,6 +19,21 @@ h1.page-title{
 
 }
 
+.form-grid{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .form-grid {
+      flex-direction: column;
+    }
+}
+
+.input-box{
+   padding: 5px;
+}
+
 .grid-container{
     width: 100%;
     display: grid;
