@@ -60,7 +60,7 @@ const addDeleteButton = (box) =>{
 
 const addBox = () =>{
     if(!isGridCreated){
-        alert('Please create a grid');
+        alert('Please click create a grid first');
         return;
     }
     let nextBox = document.createElement('div');
