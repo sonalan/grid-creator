@@ -19,6 +19,8 @@ const createGrid = () => {
         gridContainer.innerHTML='';
         gridForm.reset();
         isGridCreated=false;
+        buttonCreateGrid.innerHTML='Create Grid';
+        buttonCreateGrid.classList.remove('reset');
         return;
     }
 
@@ -27,6 +29,8 @@ const createGrid = () => {
     gridContainer.style.gridTemplateColumns=`repeat(${columns}, 1fr)`;
     gridContainer.style.gap='2px';
     isGridCreated=true;
+    buttonCreateGrid.innerHTML='Reset Form';
+    buttonCreateGrid.classList.add('reset');
 }
 
 buttonCreateGrid.addEventListener('click',(e)=>{
