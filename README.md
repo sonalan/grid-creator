@@ -1,4 +1,4 @@
-# grid-creator
+# grid-generator
 
 simple grid generator created with vanilla js  
 
