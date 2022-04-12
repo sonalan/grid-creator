@@ -4,7 +4,9 @@ body{
     width: 100vh;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+    background: #2B2D42;
+    color: #ffffff;
 }
 
 .page-container{
@@ -37,8 +39,21 @@ h1.page-title{
 .grid-container{
     width: 100%;
     display: grid;
+    background: #92DCE5;
+    gap: 10px;
+    rid-auto-flow: row dense;
 }
 
 .grid-box{
-    
+    background: #F7EC59;
+    border: 1px solid dashed;
+    position: relative;
+}
+
+.grid-box .delete-box{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    padding: 10px;
+    cursor: pointer;
 }
