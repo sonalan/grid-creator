@@ -12,9 +12,9 @@ let gridContainer = document.getElementById('gridContainer');
 let isGridCreated = false;
 
 const createGrid = () => {
-    console.log('createGrid()-> called ')
+    //console.log('createGrid()-> called ')
     if(isGridCreated){ 
-        console.log('createGrid()-> condintion isGridCreated true')
+        //console.log('createGrid()-> condintion isGridCreated true')
         gridContainer.removeAttribute('style');
         gridContainer.innerHTML='';
         gridForm.reset();
@@ -22,8 +22,10 @@ const createGrid = () => {
         return;
     }
 
-
-    
+    let columns = columnCount.options[columnCount.selectedIndex].value;
+    //console.log(columns)
+    gridContainer.style.gridTemplateColumns=`repeat(${columns}, 1fr)`;
+    gridContainer.style.gap='2px';
     isGridCreated=true;
 }
 

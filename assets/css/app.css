@@ -18,12 +18,13 @@ h1.page-title{
     font-size: 18px;
 }
 .form-container{
-
+    clear: both;
 }
 
 .form-grid{
     display: flex;
     flex-direction: row;
+    
 }
 
 @media (max-width: 800px) {
@@ -37,15 +38,17 @@ h1.page-title{
 }
 
 .grid-container{
+    clear: both;
     width: 100%;
     display: grid;
     background: #92DCE5;
     gap: 10px;
-    rid-auto-flow: row dense;
+    grid-auto-flow: row dense;
 }
 
 .grid-box{
     background: #F7EC59;
+    color: #2B2D42;
     border: 1px solid dashed;
     position: relative;
 }
